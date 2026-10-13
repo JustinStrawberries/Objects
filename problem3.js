@@ -5,8 +5,12 @@ const students = [
 ];
 
 function findByName(students, targetName){
+    if (students.find(student => student.name === targetName)){
     return students.find(student => student.name === targetName)
-    else ()
+  }
+  else{
+    return "Not found"
+  }
 }
 
 console.log(findByName(students, "ChenZee"));
