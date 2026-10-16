@@ -11,7 +11,6 @@ function printRoster(students) {
   students.forEach((student) => {
     console.log(student.name + " is in grade " + student.grade + " with a " + student.gpa + " GPA. ");
   });
-
 }
 
 printRoster(students)
