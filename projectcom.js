@@ -30,35 +30,24 @@ const animalsForSale = [
 
 let cart = {};
 
-// function addtoCart(add) {
-//   const getAnimal = animalsForSale.find((item) => item.name === add);
-//   if (getAnimal) {
-//     cart.push(getAnimal);
-//   }
-//   // const InCart = cart.find(item => item.add === id);
-//   // if (InCart){
-//   //   cart.push
-//   // }
-// }
-
 function removefromCart(item) {
   if (cart[item]) {
-    cart.pop(item);
-    console.log("removed "(item))
+    delete cart[item];
+    console.log("removed " + item);
   }
 }
 
 function totalofCart() {
   let price = 0;
   cart.forEach((animal) => {
-    price += animal.price;
+    price += animal.price * animal.quantity;
   });
   return price;
 }
 
 function filter(category) {
   let filteredlist = [];
-  for (i in animalsForSale) {
+  for (let animal of animalsForSale) {
     if (animal.category === category) {
       const matchedAnimal = animal;
       filteredlist.push(matchedAnimal);
@@ -67,15 +56,13 @@ function filter(category) {
   return filteredlist;
 }
 
-function addToCart(item){
-  x = item.name;
-  if (cart[x]){
-    cart[x].quantity += 1
+function addToCart(item) {
+  const x = item.name;
+  if (cart[x]) {
+    cart[x].quantity += 1;
     console.log("increase qty");
-  }
-  else {
+  } else {
     cart[x] = item;
-    cart[x].quantity = 1
-
+    cart[x].quantity = 1;
   }
-  }
+}
