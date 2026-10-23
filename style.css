@@ -1,0 +1,28 @@
+html,
+body,
+*{
+font-size: 10px;
+box-sizing: border-box;
+margin: 0;
+/* the space inside an element is padding */
+padding: 0;
+}
+
+body {
+    background-color: #ac9eff;
+}
+
+div{
+    height: 55rem;
+    width: 30rem;
+    background-color: #ffffff;
+    /* margin is space between elements */
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.card{
+    background-color: #ff0000;
+}
+#test{
+    background-color: #2600ff;
+}
