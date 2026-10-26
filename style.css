@@ -1,7 +1,10 @@
-html,
+html
+{
+font-size: 5px;
+}
 body,
 *{
-font-size: 10px;
+font-size: 20px;
 box-sizing: border-box;
 margin: 0;
 /* the space inside an element is padding */
@@ -20,7 +23,10 @@ div{
     margin: 0.5rem;
     padding: 1rem;
 }
-.card{
+.card1{
+    margin: 15px;
+    font-size: 4rem;
+    font-weight: 800;
     background-color: #ff0000;
 }
 #test{
