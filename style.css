@@ -12,7 +12,14 @@ padding: 0;
 }
 
 body {
-    background-color: #ac9eff;
+    background-image:
+    linear-gradient(rgba(177, 154, 255, .6), rgba(277, 154, 255, .6)),
+    url(img/newyorkcitybbp.jpg);
+
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 div{
@@ -23,7 +30,7 @@ div{
     margin: 0.5rem;
     padding: 1rem;
 }
-.card1{
+.card{
 
     margin: 15px;
     font-size: 4rem;
@@ -53,7 +60,7 @@ div{
     border: 1px solid #5250e0;
     border-radius: 4.0rem;
     font-size: 5rem;
-    font-weight: 600px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s
 }
