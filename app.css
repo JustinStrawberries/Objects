@@ -1,0 +1,27 @@
+*{
+font-size: 20px;
+box-sizing: border-box;
+margin: 0;
+/* the space inside an element is padding */
+padding: 10;
+}
+
+.box{
+    margin: 3rem auto;
+    height: 30rem;
+    width: 25%;
+    font-size: 4rem;
+    font-weight: 800;
+    background-color: #ff0000;
+    border-radius: 0.8rem;
+}
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    row-gap: 10%;
+    gap: 10%;
+    ;
+}
