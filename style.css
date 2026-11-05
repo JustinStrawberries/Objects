@@ -20,12 +20,15 @@ body {
     background-position: center; 
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  background-attachment: fixed;
 }
 
 div{
     height: 55rem;
     width: 30rem;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* margin is space between elements */
     margin: 0.5rem;
     padding: 1rem;
@@ -65,6 +68,12 @@ div{
   background-position: center;
   background-attachment: fixed;
 }
+
+.bottom {
+  height: 45rem;
+  width: 25rem;
+}
+
 .hero-content {
   width: 85rem;
   padding: 2rem;
